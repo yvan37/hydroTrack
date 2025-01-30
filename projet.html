@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HydroTrack - Votre Coach Hydratation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>💧 HydroTrack</h1>
+            <div class="progress-ring">
+                <svg width="120" height="120">
+                    <circle class="progress-circle" cx="60" cy="60" r="54"/>
+                </svg>
+                <div class="progress-text">0%</div>
+            </div>
+        </header>
+
+        <div class="controls">
+            <button class="btn-glass" data-ml="250">🥛 250ml</button>
+            <button class="btn-glass" data-ml="500">🍶 500ml</button>
+            <div class="custom-input">
+                <input type="number" id="custom-ml" placeholder="ML personnalisés">
+                <button id="add-custom">+</button>
+            </div>
+        </div>
+
+        <div class="history">
+            <h2>Historique (7 jours)</h2>
+            <canvas id="hydrationChart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="projet.js"></script>
+</body>
+</html>
